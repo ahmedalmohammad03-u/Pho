@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>حجز موعد</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="hdr-text">
+      <p>الجمهورية العربية السورية</p>
+      <p>وزارة الداخلية</p>
+      <p>الهيئة العامة لمستشفى الشرطة في حرستا</p>
+    </div>
+    <div class="hdr-logo">
+      <img src="logo.png" alt="شعار مستشفى الشرطة" />
+    </div>
+  </header>
+
+  <main>
+    <form id="bookingForm">
+      <label>الإسم الثلاثي:
+        <input type="text" id="fullName" required maxlength="128" />
+      </label>
+
+      <label>العمر:
+        <input type="number" id="age" required min="0" max="120" />
+      </label>
+
+      <label>الجنس:
+        <select id="gender" required>
+          <option value="">اختر</option>
+          <option value="ذكر">ذكر</option>
+          <option value="أنثى">أنثى</option>
+        </select>
+      </label>
+
+      <label>الفئة:
+        <select id="category" required>
+          <option value="">اختر</option>
+          <option value="مدني">مدني</option>
+          <option value="عسكري">عسكري</option>
+          <option value="قرابة عسكري">قرابة عسكري</option>
+        </select>
+      </label>
+
+      <label>المحافظة الأصل:
+        <input type="text" id="governorate" required maxlength="64" />
+      </label>
+
+      <label required>عنوان السكن:
+        <input type="text" id="address" required maxlength="128" />
+      </label>
+      <!-- الحقول الأخرى كما كانت سابقاً … -->
+
+      <label for="clinics">العيادات:</label>
+      <select id="clinics" name="clinics" multiple size="10" required>
+        <option value="الجراحة البولية">العيادة الجراحة البولية</option>
+        <option value="الجراحة العظمية">العيادة الجراحة العظمية</option>
+        <option value="الجراحة العامة">العيادة الجراحة العامة</option>
+        <option value="الجراحة العصبية">العيادة الجراحة العصبية</option>
+        <option value="الجراحة التجميلية">العيادة الجراحة التجميلية</option>
+        <option value="الجراحة الفكية">العيادة الجراحة الفكية</option>
+        <option value="الداخلية العامة">العيادة الداخلية العامة</option>
+        <option value="الداخلية العصبية">العيادة الداخلية العصبية</option>
+        <option value="الداخلية القلبية">العيادة الداخلية القلبية</option>
+        <option value="الداخلية الهضمية">العيادة الداخلية الهضمية</option>
+        <option value="الداخلية الغدية">العيادة الداخلية الغدية</option>
+        <option value="الداخلية الصدرية">العيادة الداخلية الصدرية</option>
+        <option value="الإذنية">العيادة الإذنية</option>
+        <option value="العينية">العيادة العينية</option>
+        <option value="النسائية">العيادة النسائية</option>
+        <option value="الأطفال">العيادة الأطفال</option>
+        <option value="الأوعية والدم">العيادة الأوعية و الدم</option>
+        <option value="أمراض اللثة">العيادة الامراض اللثة</option>
+        <option value="تقويم الأسنان">العيادة التقويم الأسنان</option>
+      </select>
+
+      <button type="submit">إرسال</button>
+    </form>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

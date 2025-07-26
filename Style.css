@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  direction: rtl;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #808080;
+  color: #fff;
+  padding: 10px;
+}
+
+.hdr-text p {
+  margin: 2px 0;
+}
+
+.hdr-logo img {
+  height: 150px;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #808080;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background: #003060;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+form label {
+  display: block;
+  margin: 10px 0;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #009639;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+}
